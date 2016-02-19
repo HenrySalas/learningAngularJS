@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<div ng-view></div>
+    <title>Log In</title>
+    <meta charset="UTF-8">
+    <!-- Latest compiled and minified CSS -->
+    <script type="text/javascript" src = "js/angular.min.js"></script>
+    <script type="text/javascript" src = "js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+</head>
+<body ng-app = "app">
+	<div class = "full col-sm-3" ng-controller = "miPrimerControlador">
+		<div class = "row-fluid">
+			<p class = "nav-title">Para acceder, tienes que logearte primero con un usuario autorizado...</p>
+		</div>
+		<div class="column col-sm-9">
+			<div>
+				<label>Usuario </label>
+				<input id = "user" placeholder = "Introduzca su id de usuario">
+				<label>Contraseña </label>
+				<input id = "pass" placeholder = "Intruduzca su clave" type = "password">
+				<button type = "button" class = "btn btn-success">Continuar</button>
+				<p><a href="/#main">Pícale</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div ng-view></div>
+</body>
+</html>

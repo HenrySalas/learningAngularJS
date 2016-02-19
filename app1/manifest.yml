@@ -1,0 +1,10 @@
+applications:
+- services:
+  - mongodb-uw
+  disk_quota: 1024M
+  host: eddgarvfnodejs
+  name: eddgarvfNodeJs
+  path: .
+  domain: w3ibm.mybluemix.net
+  instances: 1
+  memory: 256M
